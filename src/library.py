@@ -13,4 +13,3 @@ def puissance(x,n):
  return puissance(x*x, n/2)
  else:
  return puissance(x*x, n/2)*x
- #fin fonction
