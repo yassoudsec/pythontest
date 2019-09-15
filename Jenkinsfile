@@ -1,17 +1,7 @@
 pipeline {
     agent none
     stages {
-        stage('Build') {
-            agent { docker { image 'maven:3-alpine'
-                    } 
-            }
-            steps {
-                checkout scm
-                sh 'ls -l'
-                echo 'Hello, Maven'
-                sh "mvn --version"
-            }
-        }
+       
         stage('Unit Test') {
             agent { docker { image 'python:3.7-slim'
                     } 
