@@ -2,11 +2,6 @@ import unittest
 from library import *
 
 class MyTest(unittest.TestCase):
-    
-    #debut test puissance
-    def test_puissancee(self)
-    self.assertFalse(puissance(2,2), 4)
-    #fin test
 
     def test_increment(self):
         self.assertEqual(increment(3), 4)
